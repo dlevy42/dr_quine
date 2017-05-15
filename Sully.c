@@ -5,6 +5,7 @@ int i=5;
 STR(
 	int main(int argc, char **argv)
 	{
+		argc = argc;
 		char name[200];
 		FILE *f = NULL;
 		if(!i)

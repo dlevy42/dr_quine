@@ -1,0 +1,11 @@
+#!/usr/bin/php
+<?php
+/*
+	commentaire
+*/
+define('F',$f=fopen('Grace_kid.php','w+'));
+define('STR',$str="#!/usr/bin/php%c<?php%c/*%c%ccommentaire%c*/%cdefine('F',%cf=fopen('Grace_kid.php','w+'));%cdefine('STR',%cstr=%c%s%c);%cdefine('MAIN',fprintf(F,STR,10,10,10,9,10,10,36,10,36,34,%cstr,34,10,36,10,10,36,10,10));%cMAIN;%cfclose(%cf);%c?>%c");
+define('MAIN',fprintf(F,STR,10,10,10,9,10,10,36,10,36,34,$str,34,10,36,10,10,36,10,10));
+MAIN;
+fclose($f);
+?>
